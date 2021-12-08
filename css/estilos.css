@@ -1,0 +1,427 @@
+/* -- Etiquetas-- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+h1 {
+    background-color: rgb(0, 0, 0);
+    color: aqua;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    
+    display: inline;
+    position: relative;
+
+    animation-duration: 4s;
+    animation-name: titulo;
+}
+
+h2 {
+    text-align-last: center;
+    background-color: aquamarine;
+}
+
+
+h3 {
+    background-color: aquamarine;
+    color: rgb(70, 69, 69);
+    text-align: center;
+}
+
+fieldset {
+    background-color: rgba(72, 228, 181, 0.349);
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+article {
+    text-align: center;
+}
+
+
+/* -- clases -- */
+
+.menu {
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    text-align: center;
+    /*padding: 10px;*/
+}
+
+.menuSticky {
+    position: sticky;
+    top: 0px;
+    z-index: 1000;
+}
+
+.menuCategoria {
+    background-color: white;
+    color: black;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0px;
+
+}
+
+nav ul ul {
+    display: none;
+}
+
+nav ul ul li {
+    padding: 5px;
+
+}
+
+nav li {
+    list-style: none;
+}
+
+
+nav ul li:hover ul {
+    /*display: block;
+    position: absolute;*/
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 5px;
+    text-align: left;
+}
+
+header a {
+    background-color: black;
+    /*background-color: rgb(0, 0, 0);*/
+    color: aliceblue;
+    text-decoration: none;
+    margin: 0px 5px 0px 5px;
+    padding: 5px 10px 5px 10px;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aqua;
+}
+
+.nosotros {
+    font-style: italic;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: double;
+
+}
+
+.underlineLetterSpacing {
+    text-decoration: underline;
+    letter-spacing: 2rem;
+}
+
+.WordSpacing {
+    word-spacing: 2rem;
+}
+
+.tituloTabla {
+    background-color: rgb(51, 50, 50);
+    color: aqua;
+    width: 500px;
+}
+
+.filas {
+    background-color: rgb(158, 158, 158);
+    color: rgb(0, 0, 0);
+}
+
+.faqPregunta {
+    color: cornflowerblue;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: capitalize;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+.faqRespuesta {
+    color: black;
+    font-weight: normal;
+}
+
+.parrafoContacto {
+    text-align: center;
+}
+
+.tipoLista {
+    list-style-type: lower-latin;
+    list-style-position: inside;
+    text-align: left;
+}
+
+.fondo {
+    background-image: url(https://image.freepik.com/vector-gratis/fondo-tecnologia-cibernetica_23-2148390330.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+}
+
+
+
+.pLogin {
+    background-color: black;
+    color: white;
+    padding: 5px;
+    text-align: right;
+    margin: 0px;
+}
+
+.borde {
+    border: 1px;
+    border-color: black;
+    border-style: solid
+}
+
+.destacados {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.destacados img {
+    width: 250px;
+    margin: 10px;
+    border: 2px;
+    border-style:double;
+    border-radius: 20%;
+}
+
+.destacados img:hover{
+    transition: all 2s;
+    transform:scale(1.1, 1.1);
+    border-color: rgb(255, 0, 0);
+    
+}
+
+.recientes img:hover{
+    transition: all 1s;
+    transform: rotate(360deg) scale(1.1, 1.1);
+    border-color:rgb(255, 0, 0);
+
+}
+.procesadores {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.procesadores img {
+    width: 300px;
+    padding: 0px;
+    margin: 5px;
+    border: 1px;
+    border-style: groove;
+}
+
+.procesadores img:hover{
+    transition: all 2s;
+    transform:scale(1.1, 1.1);
+    border-color: rgb(255, 0, 0);
+    
+}
+
+.motherboards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
+.motherboards img {
+    width: 300px;
+    padding: 0px;
+    margin: 5px;
+    border: 1px;
+    border-style: groove;
+}
+
+.motherboards img:hover{
+    transition: all 2s;
+    transform:scale(1.1, 1.1);
+    border-color: rgb(255, 0, 0);
+    
+}
+
+.recientes {
+    width: 200px;
+    letter-spacing: 2rem;
+}
+
+.recientes img{
+    border-radius: 50%;
+    border-style: double;
+}
+
+.footerSuperior {
+    display: flex;
+    flex-direction: column;
+    color: antiquewhite;
+    
+}
+
+.footerInferior {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.flexBoxCenter {
+    display: flex;
+    align-content: center;
+    color: rgb(255, 255, 255);
+}
+
+.flexBoxIzquierda {
+    display: flex;
+    align-content: flex-start;
+    color: rgb(255, 255, 255);
+}
+
+.flexBoxDerecha {
+    display: flex;
+    align-content: flex-end;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+.degradeFooter {
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(9, 76, 114) );
+}
+
+/* Grid por Areas */
+/*.grid-areas {
+    display: grid;
+    grid-template-areas:
+    "menuSup    menuSup     menuSup" /*1ra fila*/
+    /*"cabeza     cabeza      cabeza"/*2da fila*/
+    /*".          principal   ."/*3ra fila*/
+    /*"pie        pie         pie"/*4ta fila*/
+    /*;
+
+    grid-template-columns: 15% auto 15%;
+    
+
+}*/
+
+
+/*Nombras las areas*/
+#menuSuperior {
+    grid-area: menuSup;
+}
+header {
+    grid-area: cabeza;
+}
+main {
+    grid-area: principal;
+}
+footer {
+    grid-area: pie;
+}
+
+
+
+/*MEDIA QUERIS*/
+
+/*Smartphones*/
+@media (max-width: 480px){
+    body {
+        font-size: 0.50rem;
+    }
+    .grid-areas {
+        display: grid;
+        grid-template-areas:
+        "menuSup" /*1ra fila*/
+        "cabeza"/*2da fila*/
+        "principal"/*3ra fila*/
+        "pie"/*4ta fila*/
+        ;
+    
+        grid-template-columns: 400px;
+        justify-content: center;
+        
+    }
+}
+
+
+/*Tablet*/ 
+@media (min-width: 600px) and (max-width: 1023px){
+    body {
+        font-size: 1rem;
+    }
+    .grid-areas {
+        display: grid;
+        grid-template-areas:
+        "menuSup    menuSup     menuSup" /*1ra fila*/
+        "cabeza     cabeza      cabeza"/*2da fila*/
+        ".          principal   ."/*3ra fila*/
+        "pie        pie         pie"/*4ta fila*/
+        ;
+    
+        grid-template-columns: 15% auto 15%;
+    }
+}
+
+
+/*Desktop*/
+@media (min-width: 1024px){
+    body {
+        font-size: 1.25rem;
+    }
+    .grid-areas {
+        display: grid;
+        grid-template-areas:
+        "menuSup    menuSup     menuSup" /*1ra fila*/
+        "cabeza     cabeza      cabeza"/*2da fila*/
+        "principal  principal   principal"/*3ra fila*/
+        "pie        pie         pie"/*4ta fila*/
+        ;
+    
+        grid-template-columns: 15% auto 15%;
+        grid-column-gap: 50px;
+        
+    }
+}
+
+
+
+/* -- ids -- */
+#footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+
+}
+
+
+/* ANIMACIONES */
+@keyframes titulo {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+ }

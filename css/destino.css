@@ -1,0 +1,84 @@
+.pLogin {
+  margin: 0;
+  background-color: black;
+  color: white;
+  padding-top: 5px;
+  padding-right: 10px; }
+
+h1 {
+  color: aqua;
+  font-family: 'Oswald', sans-serif;
+  margin: 0px;
+  padding: 0 15px; }
+
+.colorDireccion {
+  color: antiquewhite; }
+
+.colorFooter {
+  color: white; }
+
+footer a {
+  color: white;
+  text-decoration: none;
+  padding: 0px 10px 0px 10px; }
+
+footer a:hover {
+  text-decoration: none;
+  color: aqua; }
+
+.degradeFooter {
+  background-image: linear-gradient(to bottom, black 50%, #094c72); }
+
+.precio {
+  font-weight: bold;
+  color: red;
+  margin: 0px; }
+
+.tituloArticulos {
+  color: black;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: 400; }
+
+.iconosRedesSociales {
+  width: 40px;
+  height: 40px;
+  margin: 0px 10px 0px 10px; }
+
+.boton-map {
+  background-color: #55acee;
+  border: #55acee; }
+
+.boton-instagram {
+  background-color: #c24f1a;
+  border: #c24f1a; }
+
+.boton-twitter {
+  background-color: #08c5ff;
+  border: #08c5ff; }
+
+.boton-facebook {
+  background-color: #001aff;
+  border: #001aff; }
+
+.boton-whatsapp {
+  background-color: #00ff4c;
+  border: #00ff4c; }
+
+h1 {
+  font: 10.5rem; }
+
+h2 {
+  font: 5.25rem; }
+
+h3 {
+  font: 3.5rem; }
+
+h4 {
+  font: 2.625rem; }
+
+h5 {
+  font: 2.1rem; }
+
+h6 {
+  font: 1.75rem; }

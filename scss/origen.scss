@@ -1,0 +1,90 @@
+
+//Variables//
+$colorAqua: aqua;
+$colorNegro: black;
+$colorBlancoAntiq: antiquewhite;
+$colorBlanco: white;
+$colorRojo: red;
+
+.pLogin {
+    margin: 0;
+    background-color: $colorNegro;
+    color: $colorBlanco;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+h1 {
+    color: $colorAqua;
+    font-family: 'Oswald', sans-serif;
+    margin: 0px;
+    padding: 0 15px;
+}
+
+.colorDireccion {
+    color: $colorBlancoAntiq;
+}
+
+.colorFooter{
+    color: $colorBlanco;
+}
+
+footer a {
+    color: $colorBlanco;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color: $colorAqua;
+}
+
+
+.degradeFooter {
+    background-image:linear-gradient(to bottom, rgb(0, 0, 0) 50%, rgb(9, 76, 114) );
+}
+
+.precio {
+    font-weight: bold;
+    color: $colorRojo;
+    margin: 0px;
+}
+
+.tituloArticulos {
+    color:$colorNegro;
+    text-decoration: none;
+    font-size: medium;
+    font-weight: 400;
+}
+
+.iconosRedesSociales {
+    width: 40px;
+    height: 40px;
+    margin: 0px 10px 0px 10px; 
+}
+
+$colores:(
+    /*  clave:     valor*/
+    map:        #55acee,
+    instagram:  #c24f1a,
+    twitter:    #08c5ff,
+    facebook:   rgb(0, 26, 255),
+    whatsapp:   rgb(0, 255, 76),
+);
+
+@each $nombre, $color in $colores {
+    .boton-#{$nombre} {
+        background-color: $color;
+        border: $color;
+    }
+}
+
+//BUCLES//
+@for $titulo from 1 through 6 {
+    // bloque repite
+    // #{$var}
+    h#{$titulo} { 
+        font: 10.5rem / $titulo;
+    }
+}
